@@ -1,0 +1,41 @@
+{
+    "login": "pyaternev-is",
+    "password": "",
+
+    "dev_data_path": "select * from sbx_retail_mp_ds.frs_t_pfr_train_sample",
+    "oot_data_path": None,
+    "data_path": "../data",
+    "runs_path": "../runs",
+
+    # название столбца с целевой меткой
+    "target_name": "mnth3_nfc_90_rate_flag",
+     # название столбцов, которые не участвуют в обучении
+    "drop_features": ['report_dt', 'card_number', 'card_dwh_id', 'reissued_card_dwh_id', 'agrmnt_dwh_id', 'card_w4_id', 'agrmnt_w4_id',
+                      'epk_id', 'mnth3_nfc_rate', 'mnth3_trans_qty', 'mnth3_nfc_trans_qty', 'actual_client_dk', 'seg_main_card_dwh_id',
+                      'actual_agrmnt_dwh_id', 'actual_card_dwh_id'],
+
+
+    "never_used_features": never_used_features,
+
+    "categorical_features": None,
+
+    "split_params": [0.6, 0.2, 0.2],
+    "split_column": None,
+    "sort": None,
+
+    "absolute_diff": 5,
+    "relative_diff": 10,
+    "valid_sample": "valid",
+
+    "psi_threshold": 0.01,
+    "psi_sample": "OOT",
+
+    "gini_threshold": 5,
+
+    "permutation_threshold": 0.05,
+
+    "n_iterations": 25,
+
+    "use_automl": True
+}
+

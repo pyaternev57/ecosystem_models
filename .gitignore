@@ -1,0 +1,9 @@
+ds_template/conf/*
+ds_template/docs/*
+ds_template/dspl/*
+ld_utils/*
+conf/logins.json
+datasets/*
+data/*
+runs/*
+.idea/*
